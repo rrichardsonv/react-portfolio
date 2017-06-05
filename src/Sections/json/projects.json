@@ -1,0 +1,37 @@
+{ 
+  "type": "flex",
+  "assets": {
+    "title": "projects",
+    "image": "work_civtile.png",
+    "style": {
+      "background-color": "cadetblue"
+    }
+  },
+  "projects":[{
+    "id": "fetchquest",
+    "name": "Fetch Quest",
+    "image": "fetch_quest_mobile.jpeg",
+    "shelfSpan":"full"
+  }, {
+    "id": "skycast",
+    "name": "SkyCast Proto",
+    "image": "skycast_static.gif",
+    "shelfSpan": "half",
+    "anim": "skycast_anim.gif"
+  }, {
+    "id": "shovelin",
+    "name": "Shovelin",
+    "image": "shovelin_screenshot.png",
+    "shelfSpan":"half"
+  }, {
+    "id": "sonnetmkr",
+    "name": "Sonnet Maker",
+    "image": "sonnet_maker_screenshot.png",
+    "shelfSpan":"half"
+  }, {
+    "id": "crewbattle",
+    "name": "Crew Battle",
+    "image": "crew_battle.png",
+    "shelfSpan":"half"
+  }]
+}

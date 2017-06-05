@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Banner from './Components/Banner'
-import logo from './logo.svg';
+import Projects from './Sections/Projects'
+import Skills from './Sections/Skills'
+import Contact from './Sections/Contacts'
 import './App.css';
 
 class App extends Component {
@@ -8,11 +10,13 @@ class App extends Component {
     return (
       <div className="App">
         <Banner />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div>
+          <Projects />
+          <Skills />
+          <Contact />
+        </div>
       </div>
-    );
+    )
   }
 }
 

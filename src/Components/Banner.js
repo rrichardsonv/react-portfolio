@@ -11,14 +11,19 @@ class Banner extends Component {
           <h2 className='banner-job-title'>
             Web Developer
           </h2>
+          <ul className='social-links'>
+            <li><span className='bullet linkedin'><i className='fa fa-linkedin-square' ariaHidden />&nbsp;&nbsp;Linkedin</span></li>
+            <li><span className='bullet github'><i className='fa fa-github' ariaHidden />&nbsp;&nbsp;Github</span></li>
+            <li><span className='bullet email'><i className='fa fa-envelope' ariaHidden /></span></li>
+          </ul>
         </div>
         <div className='banner-blurb gutter-r'>
           <div className='banner-nav'>
             <ul>
-              <li>About</li>
-              <li>Projects</li>
-              <li>Skills</li>
-              <li>Contact</li>
+              <li><a href='#'>About</a></li>
+              <li><a href='#'>Projects</a></li>
+              <li><a href='#'>Skills</a></li>
+              <li><a href='#'>Contact</a></li>
             </ul>
           </div>
           <div className='banner-summary'>
