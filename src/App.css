@@ -158,10 +158,10 @@
   max-width: 25%;
 }
 .projects-section{
-  background-color: burlywood;
+  background-color: #FFFCEC;
 }
 .projects-section .project-row{
-  background-color: grey;
+  background-color: #FFFCEC;
   padding-left: 0px;
   margin-left: 0px;
 }
@@ -177,20 +177,46 @@
 .half{
 
 }
+.skycast-anim{
+  background: url('../public/skycast_anim.gif');
+}
+.skycast-static{
+  background: url('../public/skycast_static.gif');
+}
+.fetch-quest-mobile{
+  background: url('../public/fetch_quest_mobile.jpeg');
+}
+.crew-battle{
+  background: url('../public/crew_battle.png');
+}
+.sonnet-maker{
+  background: url('../public/sonnet_maker_screenshot.png');
+}
+.shovelin{
+  background: url('../public/shovelin_screenshot.png');
+}
 
 .shelf-item{
   display: inline;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .shelf-item span{
   position: absolute;
   z-index: 12;
+}
+.item-display{
+  display: none;
 }
 .grey-focus{
   -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+.grey-focus .item-display{
+  display: block;
 }
 
 .brd-top{
@@ -233,20 +259,22 @@ a.nav-btn:hover{
 }
 
 .skills-section{
-  background-color: cadetblue;
+  background-color: #30191F;
 }
 .skills-section .project-row{
-  background-color: #F4DECB;
+  background-color: #EAEFE8;
 }
 .skills-section .project-row{
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 10px;
 }
 .skill-bar{
   margin-top: 5px;
   margin-bottom: 5px;
   height: 5vh;
-  border: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-left: 1px solid #808080;
   border-radius: 10px;
 }
 .skill-area{
@@ -268,7 +296,8 @@ a.nav-btn:hover{
 .contacts {
   width: 100vw;
   min-height: 34vh;
-  background-color: #495676;
+  background-color: #FFF2A0;
+  /*background-color: #495676;*/
   display: grid;
   grid-template-columns: 1fr 1fr;
 }

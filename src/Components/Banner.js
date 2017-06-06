@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import LinksNav from '../Sections/LinksNav'
 
 class Banner extends Component {
   render () {
@@ -19,12 +20,7 @@ class Banner extends Component {
         </div>
         <div className='banner-blurb gutter-r'>
           <div className='banner-nav'>
-            <ul>
-              <li><a href='#'>About</a></li>
-              <li><a href='#'>Projects</a></li>
-              <li><a href='#'>Skills</a></li>
-              <li><a href='#'>Contact</a></li>
-            </ul>
+            <LinksNav links={[{display: 'about'}, {display: 'projects', target: '699px'}, {display: 'skills'}, {display: 'contact'}]}/>
           </div>
           <div className='banner-summary'>
             <h3 className="gutter-r gutter-l">About me</h3>

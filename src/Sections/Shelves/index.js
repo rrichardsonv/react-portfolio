@@ -6,20 +6,25 @@ import EvenShelves from './EvenShelves'
 class Shelves extends Component {
   render () {
     const shelves = this.props.shelves
+    let arrangement
     switch (this.props.type) {
       case 'flex':
-        return (
+        arrangement = (
           <FlexShelves shelves={shelves} />
         )
+        break
       case 'even':
-        return (
+        arrangement = (
           <EvenShelves shelves={shelves} />
         )
+        break
       default:
-        return (
+        arrangement = (
           <FlexShelves shelves={shelves} />
         )
+        break
     }
+    return arrangement
   }
 }
 const { arrayOf, object, string } = PropTypes

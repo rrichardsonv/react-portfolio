@@ -12,16 +12,13 @@ class InfoRollerContainer extends BaseComponent {
     }
   }
   componentDidMount () {
-    console.log('listening')
     window.addEventListener('scroll', this._handleScroll)
   }
   componentWillUnmount () {
-    console.log('stopping listening')
     window.removeEventListener('scroll', this._handleScroll)
   }
   _handleScroll (e) {
     let newY = e.currentTarget.pageYOffset - this.props.bounds.top
-    console.log(newY)
     if (newY < 0) {
       newY = 0
     } else if (newY > this.props.bounds.bot) {

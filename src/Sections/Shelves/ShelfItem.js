@@ -1,62 +1,58 @@
-import React from 'react'
+import React, { Component } from 'react'
 import BaseComponent from '../../Components/BaseComponent'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { setActiveProject, setActiveModal } from '../../Stores/actionCreators'
 
 class ShelfItem extends BaseComponent {
   constructor (props) {
     super(props)
-    this._bind('handleMouseEnter', 'handleMouseLeave', 'handleAnimationTrigger')
-    this.state = {
-      image: props.image,
-      nameVisibility: 'hidden',
-      greyFocus: '',
-      anim: props.anim != null
-    }
+    this._bind('_handleMouseEnter', '_handleMouseLeave', '_handleProjectClick')
   }
-  handleAnimationTrigger () {
-    if (this.state.anim) {
-      if (this.state.greyFocus === '') {
-        this.setState({image: this.props.anim})
-      } else {
-        this.setState({image: this.props.image})
-      }
-    }
+  _handleProjectClick (ev) {
+    this.props.dispatch(setActiveModal(this.props.id))
   }
-  handleMouseEnter () {
-    this.setState({nameVisibility: '', greyFocus: 'grey-focus'})
-    this.handleAnimationTrigger()
-
+  _handleMouseEnter (ev) {
+    this.props.dispatch(setActiveProject(this.props.id))
   }
-  handleMouseLeave () {
-    this.setState({nameVisibility: 'hidden', greyFocus: ''})
-    this.handleAnimationTrigger()
+  _handleMouseLeave (ev) {
+    this.props.dispatch(setActiveProject(''))
   }
   render () {
-    const { shelfSpan, name } = this.props
     return (
       <div
-        onMouseEnter={this.handleMouseEnter}
-        onMouseLeave={this.handleMouseLeave}
-        className={`shelf-item ${shelfSpan} ${this.state.greyFocus}`}
-        style={{
-          background: `url(./${process.env.PUBLIC_URL}/${this.state.image})`,
-          backgroundSize: 'cover'
-        }}
+        onMouseEnter={this._handleMouseEnter}
+        onMouseLeave={this._handleMouseLeave}
+        className={`shelf-item
+          ${this.props.shelfSpan}
+          ${(this.props.id === this.props.activeProject && this.props.anim != null) ? this.props.anim : this.props.image}
+          ${this.props.id === this.props.activeProject ? 'grey-focus' : ''}`
+        }
       >
-        <div className={this.state.nameVisibility}>
+        <div
+          onClick={this._handleProjectClick}
+          className='item-display'>
           <span>
-            {name}
+            {this.props.name}
           </span>
         </div>
       </div>
     )
   }
 }
-const { string } = React.PropTypes
+const { string, func } = PropTypes
 
 ShelfItem.propTypes = {
   image: string,
   shelfSpan: string,
-  name: string
+  name: string,
+  activeProject: string,
+  dispatch: func
+}
+const mapStateToProps = (state) => {
+  return {
+    activeProject: state.sections.project
+  }
 }
 
-export default ShelfItem
+export default connect(mapStateToProps)(ShelfItem)
