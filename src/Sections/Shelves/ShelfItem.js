@@ -10,6 +10,7 @@ class ShelfItem extends BaseComponent {
     this._bind('_handleMouseEnter', '_handleMouseLeave', '_handleProjectClick')
   }
   _handleProjectClick (ev) {
+    console.log(this.props.id)
     this.props.dispatch(setActiveModal(this.props.id))
   }
   _handleMouseEnter (ev) {

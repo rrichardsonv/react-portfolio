@@ -26,7 +26,7 @@ class ModalWrapper extends Component {
       ) : null
     return (
       <div
-        className="modal"
+        className="main-modal"
         onClick={this._handleBackgroundClick}
       >
         <header>

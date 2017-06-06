@@ -6,7 +6,11 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
+.main-modal{
+  display: fixed;
+  background-color: white;
+  width: 50vw;
+}
 /*#22353c
 #dea26c
 #6f4837
@@ -15,6 +19,33 @@
 
 .App-intro {
   font-size: large;
+}
+.main-modal{
+  position: fixed;
+  background-color: black;
+  max-width: 60vw;
+  opacity: 0.9;
+  border-radius: 9px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  color: white;
+}
+.modal-image-wrapper{
+  background-color: white;
+  border-radius: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  max-width: 45vw;
+  margin: 0 auto;
+}
+.modal-image{
+  max-width: 40vw;
 }
 .banner{
   display: grid;

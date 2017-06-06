@@ -13,7 +13,7 @@ class ProjectModal extends Component {
         <div className='modal-image-wrapper'>
           <img
             className='modal-image'
-            src={this.props.image}
+            src={`./${process.env.PUBLIC_URL}/${this.props.image}`}
           />
         </div>
         <p>{this.props.text}</p>
@@ -31,7 +31,7 @@ class ProjectModal extends Component {
     return (
       <ModalWrapper
         title={this.props.title}
-        children={this._formatContent}
+        children={this._formatContent()}
         hideModal={this.props.hideModal}
         showOk={false}
       />
