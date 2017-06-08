@@ -27,7 +27,7 @@
     "sh": {
       "title": "Shovlin",
       "text": ["Shared bookmarks Chrome Extension", "Javascript, Rails, SQL", "Chrome Extension to turn a bookmarks folder into a shared Stumbleupon."],
-      "image": "shovelin_screenshot.png",
+      "image": "shovelin_screenshot.jpeg",
       "links": [{
         "url": "https://github.com/rrichardsonv/shovelin",
         "display": "Extension Codebase"
@@ -39,7 +39,7 @@
     "sm": {
       "title": "Sonnet Maker",
       "text": ["Natural Language Generation CLI","Python3, NLTK", "Focused on implementing simple grammar in this deep dive into the linguistic fever dream that is the English language. First minor foray into Python3 and the amazing depth in NLG"],
-      "image": "sonnet_maker_screenshot.png",
+      "image": "sonnet_maker.jpeg",
       "links": [{
         "url": "https://github.com/rrichardsonv/sonnet-maker",
         "display": "Codebase"
