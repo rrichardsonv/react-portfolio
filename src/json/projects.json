@@ -1,0 +1,34 @@
+{ 
+  "type": "flex",
+  "assets": {
+    "title": "projects",
+    "image": "work_civtile.png"
+  },
+  "projects":[{
+    "id": "fq",
+    "name": "Fetch Quest",
+    "image": "fetch-quest-mobile",
+    "shelfSpan":"full"
+  }, {
+    "id": "cb",
+    "name": "Crew Battle",
+    "image": "crew-battle",
+    "shelfSpan":"full"
+  }, {
+    "id": "sh",
+    "name": "Shovelin",
+    "image": "shovelin",
+    "shelfSpan":"half"
+  }, {
+    "id": "sm",
+    "name": "Sonnet Maker",
+    "image": "sonnet-maker",
+    "shelfSpan":"half"
+  }, {
+    "id": "sk",
+    "name": "SkyCast Proto",
+    "image": "skycast-static",
+    "shelfSpan": "full",
+    "anim": "skycast-anim"
+  }]
+}

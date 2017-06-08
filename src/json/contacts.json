@@ -1,0 +1,17 @@
+{
+  "links": [{
+    "display": "Github",
+    "url": "https://github.com/rrichardsonv"
+  }, {
+    "display": "LinkedIn",
+    "url": "https://linkedin.com/in/rrichardsonv"
+  }, {
+    "display": "Twitter",
+    "url": "https://twitter.com/riposteMkV"
+  }],
+  "infoProps": {
+    "title": "contact",
+    "image": "contacts_civtile.png",
+    "pos": "0px 0px"
+  }
+}

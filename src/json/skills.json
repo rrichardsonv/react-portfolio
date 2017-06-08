@@ -1,0 +1,75 @@
+{ 
+  "type": "even",
+  "assets": {
+    "title": "skills",
+    "image": "skills_civtile.png",
+    "style": {
+      "background-color": "burlywood"
+    }
+  },
+  "skills":[{
+    "id":1,
+    "name":"HTML",
+    "level":100
+  }, {
+    "id":7,
+    "name":"Git Workflow",
+    "level":100
+  }, {
+    "id":3,
+    "name":"JavaScript",
+    "level":100
+  }, {
+    "id":4,
+    "name":"Ruby",
+    "level":100
+  }, {
+    "id":5,
+    "name":"Test Driven Development",
+    "level":100
+  }, {
+    "id":6,
+    "name":"Agile Methodologies",
+    "level":100
+  }, {
+    "id":2,
+    "name":"CSS",
+    "level":90
+  }, {
+    "id":8,
+    "name":"SQL",
+    "level":90
+  }, {
+    "id":9,
+    "name":"Ruby on Rails",
+    "level":90
+  }, {
+    "id":10,
+    "name":"jQuery",
+    "level":80
+  }, {
+    "id":11,
+    "name":"Ajax",
+    "level":80
+  }, {
+    "id":12,
+    "name":"ReactJS",
+    "level":80
+  }, {
+    "id":13,
+    "name":"Python",
+    "level":60
+  }, {
+    "id":14,
+    "name":"NodeJS",
+    "level":60
+  }, {
+    "id":15,
+    "name":"Angular 2",
+    "level":50
+  }, {
+    "id":16,
+    "name":"Ionic 2",
+    "level":50
+  }]
+}

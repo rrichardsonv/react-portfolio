@@ -1,20 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Banner from './Components/Banner'
+import Projects from './Sections/Projects'
+import Skills from './Sections/Skills'
+import Contact from './Sections/Contacts'
+import rootReducer from './Stores/index'
+import ModalConductor from './Components/ModalConductor/index'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import './App.css'
+
+const store = createStore(rootReducer)
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <Provider store={store}>
+        <div className="App">
+          <ModalConductor />
+          <div id='about' className='anchor-div'/>
+          <Banner />
+          <div>
+            <div id='projects' className='anchor-div'/>
+            <Projects />
+            <div id='skills' className='anchor-div'/>
+            <Skills />
+            <div id='contact' className='anchor-div'/>
+            <Contact />
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+      </Provider>
+    )
   }
 }
 
