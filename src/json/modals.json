@@ -3,7 +3,7 @@
     "fq": {
       "title": "Fetch Quest",
       "text": ["Errand gamification mobile app.","Angular, Ionic, Rails, SQL and Google Maps API.", "Focused on building out the map UI/UX and geolocation functionality. Designed and built out the Api and associated test suite for controlling continuous integration."],
-      "image": "fq_modal.png",
+      "image": "fq_modal.jpeg",
       "links": [{
         "url": "https://github.com/rrichardsonv/fetch-quest-mobile",
         "display": "Mobile Codebase"
@@ -15,7 +15,7 @@
     "cb": {
       "title": "Crew Battle",
       "text": ["SSB4 Format Web Tool", "React, Redux", "Currently in the process of playtesting. Built as a tool to enable additional formats for tournaments hosted by iCon Tournaments."],
-      "image": "cb_modal.png",
+      "image": "cb_modal.jpeg",
       "links": [{
         "url": "https://github.com/rrichardsonv/crew-battle",
         "display": "Codebase"
@@ -48,7 +48,7 @@
     "sk": {
       "title": "Skycast",
       "text": ["Weather forecasting app","React, Redux, D3, Node, Rails, SQl, Darksky Api, Google Geocoding Api","Weather charts for current and future forecast data. Split responsibilities for planned move to React Native."],
-      "image": "sk_modal.png",
+      "image": "sk_modal.jpeg",
       "links": [{
         "url": "https://github.com/rrichardsonv/skycast-proto2",
         "display": "Client Codebase"
