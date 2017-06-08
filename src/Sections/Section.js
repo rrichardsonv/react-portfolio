@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import InfoRollerContainer from './InfoRollerContainer'
 import Shelves from './Shelves/index'
+import data from '../json/copy.json'
 
 class Section extends Component {
   render () {
@@ -10,12 +11,13 @@ class Section extends Component {
       <div className='section'>
         <div className='container-fluid no-gutter'>
           <div
-            className={`${name}-section section-row row t-off-3p`}>
+            className={`${name}-section section-row row`}>
             <InfoRollerContainer
               bounds={bounds}
               infoProps={infoProps}
             />
             <Shelves
+              copy={data[name] || null}
               type={type}
               shelves={shelves}
             />

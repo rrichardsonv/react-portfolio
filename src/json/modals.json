@@ -2,8 +2,8 @@
   "projects": {
     "fq": {
       "title": "Fetch Quest",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consequatur culpa quasi error numquam voluptatum tenetur sed aperiam quis optio explicabo minima, aut itaque assumenda sunt magni voluptatibus cum dolore!",
-      "image": "fetch_quest_mobile.jpeg",
+      "text": ["Errand gamification mobile app.","Angular, Ionic, Rails, SQL and Google Maps API.", "Focused on building out the map UI/UX and geolocation functionality. Designed and built out the Api and associated test suite for controlling continuous integration."],
+      "image": "fq_modal.png",
       "links": [{
         "url": "https://github.com/rrichardsonv/fetch-quest-mobile",
         "display": "Mobile Codebase"
@@ -14,19 +14,19 @@
     },
     "cb": {
       "title": "Crew Battle",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consequatur culpa quasi error numquam voluptatum tenetur sed aperiam quis optio explicabo minima, aut itaque assumenda sunt magni voluptatibus cum dolore!",
-      "image": "crew_battle.png",
+      "text": ["SSB4 Format Web Tool", "React, Redux", "Currently in the process of playtesting. Built as a tool to enable additional formats for tournaments hosted by iCon Tournaments."],
+      "image": "cb_modal.png",
       "links": [{
         "url": "https://github.com/rrichardsonv/crew-battle",
         "display": "Codebase"
       }, {
         "url": "https://crew-battle.herokuapp.com",
-        "display": "Site"
+        "display": "Beta Site"
       }]
     },
     "sh": {
       "title": "Shovlin",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consequatur culpa quasi error numquam voluptatum tenetur sed aperiam quis optio explicabo minima, aut itaque assumenda sunt magni voluptatibus cum dolore!",
+      "text": ["Shared bookmarks Chrome Extension", "Javascript, Rails, SQL", "Chrome Extension to turn a bookmarks folder into a shared Stumbleupon."],
       "image": "shovelin_screenshot.png",
       "links": [{
         "url": "https://github.com/rrichardsonv/shovelin",
@@ -38,7 +38,7 @@
     },
     "sm": {
       "title": "Sonnet Maker",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consequatur culpa quasi error numquam voluptatum tenetur sed aperiam quis optio explicabo minima, aut itaque assumenda sunt magni voluptatibus cum dolore!",
+      "text": ["Natural Language Generation CLI","Python3, NLTK", "Focused on implementing simple grammar in this deep dive into the linguistic fever dream that is the English language. First minor foray into Python3 and the amazing depth in NLG"],
       "image": "sonnet_maker_screenshot.png",
       "links": [{
         "url": "https://github.com/rrichardsonv/sonnet-maker",
@@ -47,8 +47,8 @@
     },
     "sk": {
       "title": "Skycast",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consequatur culpa quasi error numquam voluptatum tenetur sed aperiam quis optio explicabo minima, aut itaque assumenda sunt magni voluptatibus cum dolore!",
-      "image": "skycast_static.gif",
+      "text": ["Weather forecasting app","React, Redux, D3, Node, Rails, SQl, Darksky Api, Google Geocoding Api","Weather charts for current and future forecast data. Split responsibilities for planned move to React Native."],
+      "image": "sk_modal.png",
       "links": [{
         "url": "https://github.com/rrichardsonv/skycast-proto2",
         "display": "Client Codebase"

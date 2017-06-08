@@ -17,10 +17,14 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <ModalConductor />
+          <div id='about' className='anchor-div'/>
           <Banner />
           <div>
+            <div id='projects' className='anchor-div'/>
             <Projects />
+            <div id='skills' className='anchor-div'/>
             <Skills />
+            <div id='contact' className='anchor-div'/>
             <Contact />
           </div>
         </div>

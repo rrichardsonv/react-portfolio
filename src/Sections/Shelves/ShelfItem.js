@@ -10,6 +10,7 @@ class ShelfItem extends BaseComponent {
     this._bind('_handleMouseEnter', '_handleMouseLeave', '_handleProjectClick')
   }
   _handleProjectClick (ev) {
+    ev.preventDefault()
     console.log(this.props.id)
     this.props.dispatch(setActiveModal(this.props.id))
   }
@@ -24,18 +25,19 @@ class ShelfItem extends BaseComponent {
       <div
         onMouseEnter={this._handleMouseEnter}
         onMouseLeave={this._handleMouseLeave}
-        className={`shelf-item
+        onClick={this._handleProjectClick}
+        className={`
           ${this.props.shelfSpan}
           ${(this.props.id === this.props.activeProject && this.props.anim != null) ? this.props.anim : this.props.image}
+          shelf-item
           ${this.props.id === this.props.activeProject ? 'grey-focus' : ''}`
         }
       >
         <div
-          onClick={this._handleProjectClick}
           className='item-display'>
-          <span>
+          <a href='' className='item-overlay-title'>
             {this.props.name}
-          </span>
+          </a>
         </div>
       </div>
     )

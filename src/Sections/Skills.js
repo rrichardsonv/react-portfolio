@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Section from './Section'
-import data from './json/skills.json'
+import data from '../json/skills.json'
 
 class Skills extends Component {
   render () {
@@ -8,7 +8,7 @@ class Skills extends Component {
       <Section
         name={'skills'}
         type={data.type}
-        bounds={{top: 1300, bot: 500}}
+        bounds={{top: 1800, bot: 500}}
         infoProps={data.assets}
         shelves={data.skills}
       />

@@ -12,8 +12,8 @@
     "name":"HTML",
     "level":100
   }, {
-    "id":2,
-    "name":"CSS",
+    "id":7,
+    "name":"Git Workflow",
     "level":100
   }, {
     "id":3,
@@ -32,9 +32,9 @@
     "name":"Agile Methodologies",
     "level":100
   }, {
-    "id":7,
-    "name":"Git Workflow",
-    "level":100
+    "id":2,
+    "name":"CSS",
+    "level":90
   }, {
     "id":8,
     "name":"SQL",
@@ -58,7 +58,7 @@
   }, {
     "id":13,
     "name":"Python",
-    "level":70
+    "level":60
   }, {
     "id":14,
     "name":"NodeJS",

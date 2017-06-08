@@ -30,13 +30,22 @@ class ModalWrapper extends Component {
         onClick={this._handleBackgroundClick}
       >
         <header>
+        <button
+          className='modal-x-close'
+          onClick={this.props.hideModal}>
+          <i className="fa fa-times" aria-hidden="true" />
+        </button>
           <h1>{this.props.title}</h1>
-
-          <button onClick={this.props.hideModal}>Close</button>
         </header>
 
         {this.props.children}
 
+        <button
+          className='modal-close'
+          onClick={this.props.hideModal}
+        >
+          Close
+        </button>
         {okButton}
       </div>
     )

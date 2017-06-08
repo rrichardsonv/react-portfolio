@@ -4,11 +4,25 @@ import Skillbar from './SkillBar'
 
 class EvenShelves extends Component {
   render () {
+    let blurbSpace
     const shelves = this.props.shelves
+    if (this.props.blurb != null) {
+      blurbSpace = (
+        <div className='blurb'>
+            {this.props.blurb.map((para) => {
+              return (
+                <p>{para}</p>
+              )
+            })}
+          </div>
+      )
+    } else {
+      blurbSpace = null
+    }
     return (
       <div className='col-md-6 col-sm-6 project-row groove-col even-shelf'>
         <br />
-        <span className='blurb'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        {blurbSpace}
         <div className='even-shelves'>
           <h4>Qualifications</h4>
           {shelves.map((shelf) => {
@@ -26,6 +40,7 @@ class EvenShelves extends Component {
 }
 const { arrayOf, shape, string, object } = PropTypes
 EvenShelves.propTypes = {
+  blurb: arrayOf(string),
   shelves: arrayOf(shape({
     name: string,
     image: string,

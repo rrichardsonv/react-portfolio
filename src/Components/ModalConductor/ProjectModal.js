@@ -16,11 +16,15 @@ class ProjectModal extends Component {
             src={`./${process.env.PUBLIC_URL}/${this.props.image}`}
           />
         </div>
-        <p>{this.props.text}</p>
-        <div className='btn-group'>
+        {this.props.text.map((line) => {
+          return (
+            <p className='modal-text'>{line}</p>
+          )
+        })}
+        <div className='btn-group modal-links'>
           {this.props.links.map((link) => {
             return (
-              <a href={link.url}>{link.display}</a>
+              <a className='btn modal-btn' href={link.url}>{link.display}</a>
             )
           })}
         </div>

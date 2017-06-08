@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import LinksNav from './LinksNav'
 import InfoRoller from './InfoRoller'
-import data from './json/contacts.json'
+import data from '../json/contacts.json'
+import blurb from '../json/copy.json'
 
 class Contacts extends Component {
   render () {
@@ -14,8 +15,12 @@ class Contacts extends Component {
         </div>
         <div className='center-wrapper r-contain'>
           <div className='contact-text'>
-            Email: rrichardsonv@gmail.com
-            <LinksNav links={data.links} />
+            {blurb.contact.map((para) => {
+              return (
+                <p className='center-p'>{para}</p>
+              )
+            })}
+            <LinksNav external links={data.links} />
           </div>
         </div>
       </div>

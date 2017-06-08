@@ -10,25 +10,35 @@ class Shelves extends Component {
     switch (this.props.type) {
       case 'flex':
         arrangement = (
-          <FlexShelves shelves={shelves} />
+          <FlexShelves
+            blurb={this.props.copy}
+            shelves={shelves}
+          />
         )
         break
       case 'even':
         arrangement = (
-          <EvenShelves shelves={shelves} />
+          <EvenShelves
+            blurb={this.props.copy}
+            shelves={shelves}
+          />
         )
         break
       default:
         arrangement = (
-          <FlexShelves shelves={shelves} />
+          <FlexShelves
+            blurb={this.props.copy}
+            shelves={shelves}
+          />
         )
         break
     }
     return arrangement
   }
 }
-const { arrayOf, object, string } = PropTypes
+const { arrayOf, object, string, oneOf } = PropTypes
 Shelves.propTypes = {
+  copy: arrayOf(string),
   shelves: arrayOf(object),
   type: string
 }

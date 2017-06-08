@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ProjectModal from './ProjectModal'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import data from '../../Sections/json/modals.json'
+import data from '../../json/modals.json'
 import { setActiveModal } from '../../Stores/actionCreators'
 
 class ModalConductor extends Component {
